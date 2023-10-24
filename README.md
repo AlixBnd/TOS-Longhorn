@@ -16,8 +16,9 @@ De plus, le point positif de Longhorn est  qu'il dispose d'une interface graphiq
  - Metallb si vous avez un cluster bare metal : [Documentation](https://metallb.universe.tf/installation/)
  
  En lançant cette commande : 
- 
- `curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.5.1/scripts/environment_check.sh | bash`
+ ```shell
+ curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.5.1/scripts/environment_check.sh | bash
+ ```
  
  Un script de validation des pré-requis sera lancé et indiquera si besoin quels composants doivent encore être installés pour avoir un environnement fonctionnel
 
@@ -28,18 +29,22 @@ Si votre choix se porte sur une installation avec Kubectl, veillez à suivre ces
 
  1. Installation
 
-    `kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.5.1/deploy/longhorn.yaml`
+    ```shell
+    kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v1.5.1/deploy/longhorn.yaml
+    ```
 
- 2. Vérification de l'installation
+ 3. Vérification de l'installation
 
 	  Les commandes suivantes permettront de voir le déploiement des pods en temps réel.
 
-    `kubectl get pods \
---namespace longhorn-system \--watch`
+    ```shell
+    kubectl get pods \
+--namespace longhorn-system \--watch
+```  4. Vérification de l'état des pods
 
- 3. Vérification de l'état des pods 
-
-     `kubectl -n longhorn-system get pod`
+```shell
+kubectl -n longhorn-system get pod
+```
 
 ```shell
   NAME                                                READY   STATUS    RESTARTS   AGE
@@ -63,7 +68,7 @@ instance-manager-b34d5db1fe1e2d52bcfb308be3166cfc   1/1     Running   0         
 engine-image-ei-df38d2e5-cv6nc                      1/1     Running   0          114s
 ```
 
-	Chacun des pods devraient être en état "running", ce qui signifie que Longhorn est bien installé.
+Chacun des pods devraient être en état "running", ce qui signifie que Longhorn est bien installé.
 
 ## Installation avec Helm
 

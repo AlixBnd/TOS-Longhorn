@@ -1,5 +1,8 @@
 # TOS Longhorn
 
+![image](https://github.com/AlixBnd/TOS-Longhorn/assets/137909386/91b9037d-7f5a-4cde-a8b2-420420685342)
+
+
 Qu'est-ce que Longhorn ? Longhorn est un **CSI**, **C**ontainer **S**torage **I**nterface. Ce composant de Kubernetes permet de fournir un stockage persistant aux applications stateful. 
 
 *Exemple : Une base de données.*

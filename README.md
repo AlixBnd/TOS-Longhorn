@@ -41,7 +41,8 @@ Si votre choix se porte sur une installation avec Kubectl, veillez à suivre ces
 
      `kubectl -n longhorn-system get pod`
 
-    NAME                                                READY   STATUS    RESTARTS   AGE
+```shell
+  NAME                                                READY   STATUS    RESTARTS   AGE
 longhorn-ui-b7c844b49-w25g5                         1/1     Running   0          2m41s
 longhorn-manager-pzgsp                              1/1     Running   0          2m41s
 longhorn-driver-deployer-6bd59c9f76-lqczw           1/1     Running   0          2m41s
@@ -60,6 +61,7 @@ csi-attacher-7bf4b7f996-8l9sw                       1/1     Running   0         
 csi-resizer-6d8cf5f99f-smdjw                        1/1     Running   0          101s
 instance-manager-b34d5db1fe1e2d52bcfb308be3166cfc   1/1     Running   0          114s
 engine-image-ei-df38d2e5-cv6nc                      1/1     Running   0          114s
+```
 
 	Chacun des pods devraient être en état "running", ce qui signifie que Longhorn est bien installé.
 

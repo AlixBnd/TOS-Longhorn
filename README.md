@@ -8,7 +8,7 @@ Longhorn permet aussi de faire des backups et de restorer ces backups entre autr
 De plus, le point positif de Longhorn est  qu'il dispose d'une interface graphique, ce qui facilite la gestion du stockage du cluster Kubernetes.
 
 
-# Pré-requis
+# Prérequis
 
  - Un cluster Kubernetes fonctionnel avec une version supérieure à 1.21
  - Open-iscsi doit être installé  : [Suivre cette documentation](https://longhorn.io/docs/1.5.1/deploy/install/#installing-open-iscsi)
